@@ -8,6 +8,7 @@ import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -31,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
         layLinearVertical = (LinearLayout)findViewById(R.id.layVertical);
        sv1 = (HorizontalScrollView) findViewById(R.id.sv1);
        sv2 = (ScrollView) findViewById(R.id.sv2);
+
+        Toast.makeText(this, "Hello semua, cuman untuk test di github doank hehe", Toast.LENGTH_LONG);
     }
 
     ArrayList<TextView> txs = new ArrayList<TextView>();
