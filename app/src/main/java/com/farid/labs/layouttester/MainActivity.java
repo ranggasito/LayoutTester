@@ -36,6 +36,25 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, "Hello semua, cuman untuk test di github doank hehe", Toast.LENGTH_LONG).show();
     }
 
+    public void exitApp(View view){
+        Toast msg = Toast.makeText(this, "This app will terminated in a few seconds. Goodbye and Thanks for using this application for test", Toast.LENGTH_LONG);
+        msg.show();
+        Thread tm = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Thread.sleep(3500);
+                    MainActivity.this.finish();
+                }catch (Exception e){
+                    e.printStackTrace();
+                }
+
+            }
+        });
+
+        tm.start();
+
+    }
     ArrayList<TextView> txs = new ArrayList<TextView>();
     public void btnHorizontalClick(View view){
         TextView tx = new TextView(this);
