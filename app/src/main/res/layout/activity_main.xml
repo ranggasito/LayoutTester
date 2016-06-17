@@ -13,7 +13,8 @@
     <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fillViewport="false">
+        android:fillViewport="false"
+        android:id="@+id/scrollView">
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -108,4 +109,13 @@
             <!-- akhir dari bagian vertical  -->
         </RelativeLayout>
     </ScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit Application"
+        android:id="@+id/btnExit"
+        android:layout_below="@+id/scrollView"
+        android:layout_centerHorizontal="true"
+        android:onClick="exitApp" />
 </RelativeLayout>
