@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
        sv1 = (HorizontalScrollView) findViewById(R.id.sv1);
        sv2 = (ScrollView) findViewById(R.id.sv2);
 
-        Toast.makeText(this, "Hello semua, cuman untuk test di github doank hehe", Toast.LENGTH_LONG);
+        Toast.makeText(this, "Hello semua, cuman untuk test di github doank hehe", Toast.LENGTH_LONG).show();
     }
 
     ArrayList<TextView> txs = new ArrayList<TextView>();
